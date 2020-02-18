@@ -62,7 +62,7 @@ public class MainViewModel extends ViewModel {
                 Type type = new TypeToken<List<ImageData>>(){}.getType();
                 List<ImageData> imageDataList = gson.fromJson(loadJSONFromAsset(), type);
                 imageList.postValue(imageDataList);
-
+                System.out.println("IMAGE LIST POST *********** "+imageDataList.size());
 
             } catch (Exception e) {
                 e.printStackTrace();
